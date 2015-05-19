@@ -23,7 +23,7 @@ FirstApp.factory('HttpInterceptors', function($q, $location, $rootScope,
         }
       }
        //add credentials header (ne sum mnogu siguren za voa)
-      config.withCredentials = true;
+      //config.withCredentials = true;
       
       // Add token in each request header
       var authToken = $rootScope.authToken;
