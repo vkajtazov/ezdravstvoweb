@@ -22,6 +22,9 @@ FirstApp.factory('HttpInterceptors', function($q, $location, $rootScope,
           config.url = settings.contextPath + config.url;
         }
       }
+       //add credentials header (ne sum mnogu siguren za voa)
+      config.withCredentials = true;
+      
       // Add token in each request header
       var authToken = $rootScope.authToken;
       if (angular.isDefined(authToken)) {
