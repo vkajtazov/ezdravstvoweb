@@ -3,7 +3,7 @@ var contextPath = "https://ezdravstvo.herokuapp.com";
 
 FirstApp.factory('UserService', function($resource) {
 
-	return $resource(contextPath + '/rest/user/:action', {}, {
+	return $resource(contextPath + "/rest/user/:action", {}, {
 		authenticate : {
 			method : 'POST',
 			params : {
