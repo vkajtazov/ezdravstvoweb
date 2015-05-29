@@ -24,6 +24,11 @@ FirstApp.config([ '$routeProvider', function($routeProvider) {
 		templateUrl : 'views/login.html',
 		controller : 'LoginController'
 	});
+	
+	$routeProvider.when('/booking', {
+	templateUrl : 'views/booking.html',
+	controller : 'BookingController'
+	});
 
 	$routeProvider.otherwise({
 		redirectTo : '/'
