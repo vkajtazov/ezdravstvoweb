@@ -1,6 +1,8 @@
+var contextPath = "https://ezdravstvo.herokuapp.com";
+
 FirstApp.factory('BookingService', function($resource) {
 
-	return $resource('/rest/bookings/:action', {}, {
+	return $resource(contextPath + "/rest/bookings/:action", {}, {
 		find : {
 			method : 'POST',
 			isArray : true,
